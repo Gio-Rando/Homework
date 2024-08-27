@@ -116,6 +116,46 @@ gap: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.photos {
+    background-color: #191919;
+    padding: 60px 20px;
+}
+
+.photos h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #00ff33;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.photo-item {
+    flex: 1 1 calc(33.333% - 20px);
+    margin-bottom: 20px;
+    border-radius: 8px;
+  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: calc(33.333% - 20px);
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    border: #00ff33 solid 5px;
+    border-radius: 10px;
+}
+
+.photo-item img:hover {
+    transform: scale(1.05);
+}
+
 .testimonials {
     padding: 60px 20px;
 }
